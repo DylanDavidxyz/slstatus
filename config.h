@@ -67,8 +67,8 @@ static const struct arg args[] = {
 	/* function format          argument */	
 	{ netspeed_rx, " [NET  %sB/s]  ", "eth0"   },
 	{ cpu_perc, "[CPU  %s%%]  ", NULL    },
-	{ ram_perc, "[RAM  %s%%]  ", NULL    },
-	{ run_command, "[VOL  %4s]    ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+	{ ram_used, "[RAM  %s]  ", NULL    },
+	{ run_command, "[VOL  %4s]   ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
 	{ datetime, "%s   ",           "%A %B %_d   %T"   },
 };
 
